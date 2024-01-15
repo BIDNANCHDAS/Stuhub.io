@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>StuHub.io</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    /* Set your desired background color */
+  }
+  
+  .splash-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Add any additional styling for the splash screen */
+</style>
+<body>
+    <div class="splash-screen">
+        <h1>StuHub.io</h1>
+        <span>by Bidhan7415</span>
+        <!-- Add any additional content or branding here -->
+    </div>
+
+    <script >
+      document.addEventListener('DOMContentLoaded', function () {
+    // Simulate loading time (adjust as needed)
+    setTimeout(function () {
+        // Redirect to home.html after the splash screen duration
+        window.location.href = 'home.html';
+    }, 3000); // Adjust the duration in milliseconds (e.g., 3000ms = 3 seconds)
+});
+
+    </script>
+</body>
+</html>
