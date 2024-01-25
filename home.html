@@ -29,7 +29,7 @@
             margin: 0 10px;
             font-size: 16px;
         }
-        #search-container,, #transcription, #media-container {
+        #search-container, #video-container, #transcription, #media-container {
             width: 90%;
             margin: 20px auto;
         }
@@ -63,25 +63,178 @@
             border: none;
             margin-top: 10px;
         }
-        . vx{
+        .vx {
             width: 10cm;
             height:7cm;
             max-width: 800px;
             margin: 0 auto;
         }
-        video {
-    width: 100%; /* Make the video player take 100% of the container */
-    height: auto; /* Maintain the aspect ratio */
-    max-width: 100%; /* Ensure the video doesn't exceed its original size */
+        
+        .vx1{
+          width: 10cm;
+          height:7cm;
+          max-width: 800px;
+          margin: 0 auto;
+          overflow-y: scroll;
+        }
+        .box1{
+          width: 10cm;
+          height:54px;
+          background-color: #000;
+          margin-top:52px;
+          color: #fff;
+        }
+        a{
+          color: #fff;
+          text-decoration: none;
+          margin: 0 10px;
+          font-size: 16px;
+        }
+        
+        .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10cm;
+    height: 10cm;
+    background: rgba(0, 0, 0, 0.5);
 }
 
-         #video-container{
-            width: 90%;
-    margin: 20px auto;
-    max-width: 800px;
-         }
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+video{
+  width:9cm;
+  height: 10cm;
+}
+span1{
+  background-colour:
+}
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <span>StuHub.io</span>
+    </nav>
+
+    <h1>enter YouTube video URL aur video ID</h1>
+
+    <div id="search-container" class="vx">
+        <label for="search">Enter a YouTube video URL or video ID:</label>
+        <input type="text" id="search" placeholder="E.g., https://www.youtube.com/watch?v=VIDEO_ID">
+        <button id="search-button">Play</button>
+    </div>
+
+    <div id="video-container" class="vx">
+        <!-- Video player will be added here -->
+    </div>
+
+    <div id="transcription"></div>
+
+    <div id="media-container" class="vx1">
+        <!-- Media items will be added here -->
+    </div>
+
+    <div>
+        <label for="file-input">Select a photo or video from your device:</label>
+        <input type="file" id="file-input" accept="image/*, video/*">
+    </div>
+    
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>how can you</h2>
+        <p>follow this step</p>
         
-             
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StuHub.io</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            position: ;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #000;
+        }
+        nav {
+            background-color: #fff;
+            color: #fff;
+            padding: 10px;
+        }
+        nav span {
+            color: #000;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        #search-container, #video-container, #transcription, #media-container {
+            width: 90%;
+            margin: 20px auto;
+        }
+        label {
+            font-size: 16px;
+            color: #555;
+        }
+        input[type="text"], input[type="file"] {
+            padding: 8px;
+            font-size: 14px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        button, #record-button1 {
+            padding: 10px 20px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover, #record-button:hover {
+            background-color: #734c3f;
+        }
+        iframe, .media-item {
+            width: 100%;
+            height: auto;
+            border: none;
+            margin-top: 10px;
+        }
+        .vx {
+            width: 10cm;
+            height:7cm;
+            max-width: 800px;
+            margin: 0 auto;
+        }
         
         .vx1{
           width: 10cm;
@@ -255,3 +408,55 @@ fileInput.addEventListener('change', () => {
     </script>
 </body>
 </html>
+￼Enter        <video src="Record_2024-01-15-11-29-04.mp4" controls ></video> 
+       <h1>2nd stage</h1> 
+       <p>In this, two types of link will be used in which watch is written or live is written.</p>
+
+         <span1>E.g., https://www.youtube.com/watch? or E.g., https://www.youtube.com/live?</span>
+       
+        
+      </div>
+    </div>
+
+    <div class="box1">
+          <button onclick="openPopup()">using tips</button>
+          
+          
+   <a href="https://www.instagram.com/bidhan7415/">😎Bidhan7415</a>
+    </div>
+
+
+
+<script src="app.js"></script>
+    <script>
+        // Your existing JavaScript code remains unchanged
+        function openPopup() {
+    document.getElementById('popup').style.display = 'block';
+}
+
+on closePopup() {
+    document.getElementById('popup').style.display = 'none';
+}
+
+fileInput.addEventListener('change', () => {
+            const files = fileInput.files;
+            if (files.length > 0) {
+                for (const file of files) {
+                    const mediaItem = document.createElement(getMediaType(file.type));
+                    mediaItem.src = URL.createObjectURL(file);
+                    mediaItem.alt = `Media ${mediaCounter}`;
+                    mediaItem.classList.add('media-item');
+
+                    mediaContainer.appendChild(mediaItem);
+                    mediaCounter++;
+                }
+
+                fileInput.value = ''; // Clear the file input after processing
+            }
+        });
+
+        function getMediaType(fileType) {
+            if (fileType.startsWith('image/')) {
+                return 'img';
+            } else if (fileType.startsWith('video/')) {
+                return 'video';
